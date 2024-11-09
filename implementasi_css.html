@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar CSS</title>
+    <!-- Cara 1: Internal CSS -->
+    <style>
+        .kotak1 {
+            background-color: yellow;
+            width: 200px;
+            height: 100px;
+        }
+        
+        .teks1 {
+            color: red;
+        }
+    </style>
+
+    <!-- Cara 2: External CSS (dibuat di file terpisah style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contoh 1: Internal CSS -->
+    <div class="kotak1">
+        <h3 class="teks1">Ini Pakai Internal CSS</h3>
+        <p>Tulisan ini pakai internal CSS</p>
+    </div>
+
+    <!-- Contoh 2: Inline CSS -->
+    <div style="background-color: blue; width: 200px; height: 100px;">
+        <h3 style="color: white;">Ini Pakai Inline CSS</h3>
+        <p style="color: white;">Tulisan ini pakai inline CSS</p>
+    </div>
+
+    <!-- Contoh 3: External CSS -->
+    <div class="kotak2">
+        <h3>Ini Pakai External CSS</h3>
+        <p>Tulisan ini pakai external CSS</p>
+    </div>
+</body>
+</html>
+
+
