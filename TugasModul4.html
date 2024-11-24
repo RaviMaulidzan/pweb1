@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan01</title>
+    <style>
+      img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+
+      b:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      li:hover {
+        background-color: #f0f0f0;
+        cursor: pointer;
+      }
+
+      div:hover {
+        background-color: #e0e0e0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      input[type="text"] {
+        padding: 8px;
+        margin: 10px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #e0f7fa;
+      }
+
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #007bb2;
+      }
+
+      th {
+        background-color: #007bb2;
+        color: white;
+      }
+
+      caption {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #007bb2;
+      }
+
+      h1 {
+        color:#007bb2;
+        text-align: center;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+
+      article {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      ul {
+        margin-left: 20px;
+      }
+
+      div {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+
+      hr {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fakultas Ilmu Komputer</h1>
+    <font size="5" face="Times New Roman">Universitas Kuningan</font>
+    <br />
+    <font size="3">
+      Alamat : JL. Pramuka No.67, Purwawinangun, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45512
+    </font>
+    <hr size="3" />
+    
+
+    <main>
+      <div>
+        <article>
+          <img src="Image/logo-fkom.png" alt="fkom.jpg" style="width: 50%" />
+
+          <div><b>VISI</b></div>
+          Terwujudnya program studi sistem informasi sebagai program studi yang handal dan unggul dalam penyelenggaraan Tri Darma Perguruan Tinggi, unggul di bidang rekayasa sistem informasi di Wilayah Jawa Barat pada tahun 2032.
+
+          <div><b><i>PROFIL LULUSAN & PILIHAN KARIR</i></b></div>
+          Quality Assurance, System Analyst, Data Analyst, Chief Information Officer (CIO), Software Developer.
+          <br />
+          <div><b>PROGRAM STUDI</b></div>
+          <ul>
+            <li>Teknik Sipil</li>
+            <li>Sistem Informasi</li>
+            <li>Teknik Informatika</li>
+            <li>Manajemen Informatika</li>
+            <li>Desain Komunikasi Visual</li>
+          </ul>
+
+          <div><b><u>KEGIATAN MBKM</u></b></div>
+          <ul>
+            <li>Magang</li>
+            <li>Studi Independen</li>
+            <li>Bangkit Academy</li>
+            <li>Pertukaran Mahasiswa Merdeka (PMM) Nusantara</li>
+            <li>International Credit Transfer (ICT)</li>
+            <li>PPK Ormawa</li>
+          </ul>
+
+          <div><b><u><i>PROGRAM UNGGULAN</i></u></b></div>
+          <ul type="square">
+            <li>Pertukaran Mahasiswa ke University Utara Malaysia (UUM)</li>
+            <li>Praktisi/Dosen Kompetensi dari Universitas lain</li>
+          </ul>
+
+          <div><strong>PRESTASI MAHASISWA</strong></div>
+          <ul type="circle">
+            <li>Juara 1 lomba Desain Cindramata 2018</li>
+            <li>Juara Favorit lomba poster STIKKU 2017</li>
+            <li>Mahasiswa Berprestasi UNIKU 2022</li>
+            <li>Duta Putra Sosial Kuningan 2022</li>
+            <li>Juara Lomba LLDIKTI Konsep Garapan Terbaik Tingkat Jabar-Banten 2022</li>
+          </ul>
+
+          <div>SERTIFIKASI</div>
+          <img src="Image/BNSP-1024x83.png" alt="" />
+        </article>
+      </div>
+      <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Cari dosen atau jurusan..." />
+      <table id="dosenTable" border="1">
+        <caption><strong>DAFTAR DOSEN</strong></caption>
+        <tr>
+          <th>No.</th>
+          <th>Nama</th>
+          <th>Homebase</th>
+          <th>Rumpun Keilmuan</th>
+        </tr>
+        <tr>
+          <td align="right">1.</td>
+          <td>Tito Sugiharto, M.Eng.</td>
+          <td>Teknik Informatika</td>
+          <td>Computer Engineering</td>
+        </tr>
+        <tr>
+          <td align="right">2.</td>
+          <td>Erik Kurniadi, M.Kom.</td>
+          <td>Sistem Informasi</td>
+          <td>Information System</td>
+        </tr>
+        <tr>
+          <td align="right">3.</td>
+          <td>Jerry D. Rahajaan, M.Sn.</td>
+          <td>Desain Komunikasi Visual</td>
+          <td>Seni, Desain, & Media</td>
+        </tr>
+        <tr>
+          <td align="right">4.</td>
+          <td>Panji Novantara, M.T.</td>
+          <td>Teknik Informatika</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td align="right">5.</td>
+          <td>Panji Novantara, M.T.</td>
+          <td>Teknik Informatika</td>
+          <td>Teknik Sipil</td>
+        </tr>
+      </table>
+    </main>
+
+    <script>
+      function filterTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("dosenTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 1; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td");
+          let matchFound = false;
+
+          for (let j = 1; j < td.length; j++) {
+            if (td[j]) {
+              txtValue = td[j].textContent || td[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                matchFound = true;
+                break;
+              }
+            }
+          }
+
+          if (matchFound) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

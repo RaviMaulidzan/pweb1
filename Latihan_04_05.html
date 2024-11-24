@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kondisi dalam JavaScript</title>
+</head>
+<body>
+    <script>
+        let nilai=85;
+
+        //Komdisi if
+        if(nilai>=90){
+            console.log("Nilai Anda : A");
+        }
+        //Kondisi if...else
+        else if(nilai>=75){
+            console.log("Nilai Anda : B");
+        }else {
+            console.log("Nilai Anda : C");
+        }
+
+        //Kondisi Switch
+        switch(nilai){
+            case 90:
+            console.log("Nilai Anda : A");
+            break;
+            case 80:
+            console.log("Nilai Anda : B");
+            break;
+            default:
+            console.log("Nilai di luar rentang");
+        }
+    </script>
+</body>
+</html>
