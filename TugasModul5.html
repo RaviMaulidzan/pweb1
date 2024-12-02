@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeri Foto Alumni UNIKU</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #header {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .gallery img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            opacity: 0;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        #modal {
+            background-color: rgba(0,0,0,0.8);
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #modal-image {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        
+        #close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        #close-btn:hover {
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Daftar Alumni UNIKU</h1>
+    <div class="gallery">
+        <img src="image/alumni1.png" alt="Alumni 1">
+        <img src="image/alumni2.png" alt="Alumni 2">
+        <img src="image/alumni3.png" alt="Alumni 3">
+        <img src="image/alumni4.png" alt="Alumni 4">
+    </div>
+
+    <div id="modal">
+        <span id="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="Gambar Penuh">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Fade in gambar saat halaman dimuat
+            $('.gallery img').each(function(index) {
+                $(this).delay(index * 200).fadeTo(500, 1);
+            });
+
+            // Tampilkan gambar dalam modal saat diklik
+            $('.gallery img').click(function() {
+                var gambarSrc = $(this).attr('src');
+                $('#modal-image').attr('src', gambarSrc);
+                $('#modal').css('display', 'flex');
+            });
+
+            // Tutup modal
+            $('#close-btn').click(function() {
+                $('#modal').hide();
+            });
+
+            // Tutup modal saat mengklik area di luar gambar
+            $('#modal').click(function(e) {
+                if (e.target === this) {
+                    $(this).hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
