@@ -1,0 +1,26 @@
+[
+    {
+        "nama_perusahaan": "PT Maju Jaya",
+        "posisi": "Software Engineer",
+        "kualifikasi": "Pendidikan minimal S1 Teknik Informatika atau setara.\r\nMenguasai PHP dan Laravel.\r\nBerpengalaman minimal 2 tahun di bidang pengembangan perangkat lunak.",
+        "kontak": "hr@majujaya.com",
+        "batas_waktu": "2025-01-20",
+        "waktu_posting": "2024-12-30 12:40:49"
+    },
+    {
+        "nama_perusahaan": "Dandi Digitals",
+        "posisi": "Digital Marketing",
+        "kualifikasi": "Berpengalaman minimal 1 tahun di bidang pemasaran digital.\r\nMenguasai SEO, SEM, dan pengelolaan media sosial.\r\nKreatif dan inovatif dalam membuat konten digital.",
+        "kontak": "info@dandidigitals.com",
+        "batas_waktu": "2025-02-12",
+        "waktu_posting": "2024-12-30 12:43:39"
+    },
+    {
+        "nama_perusahaan": "Dandi Digitals",
+        "posisi": "Digital Marketing",
+        "kualifikasi": "Berpengalaman minimal 1 tahun di bidang pemasaran digital.\r\nMenguasai SEO, SEM, dan pengelolaan media sosial.\r\nKreatif dan inovatif dalam membuat konten digital.",
+        "kontak": "info@dandidigitals.com",
+        "batas_waktu": "2025-02-12",
+        "waktu_posting": "2024-12-30 12:56:10"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "nama": "Gus Fring",
+        "email": "gusfring@gmail.com",
+        "pesan": "Websitenya sangat bagus dan informatif!",
+        "waktu": "2024-12-30 12:31:26"
+    },
+    {
+        "nama": "Walter White",
+        "email": "walterwhite@gmail.com",
+        "pesan": "Sangat membantu, terima kasih informasinya",
+        "waktu": "2024-12-30 12:33:01"
+    },
+    {
+        "nama": "Jesse Pinkman",
+        "email": "jessepinkman@gmail.com",
+        "pesan": "Saya sangat terkesan dengan layanan yang diberikan",
+        "waktu": "2024-12-30 12:33:32"
+    },
+    {
+        "nama": "Jesse Pinkman",
+        "email": "jessepinkman@gmail.com",
+        "pesan": "Saya sangat terkesan dengan layanan yang diberikan",
+        "waktu": "2024-12-30 12:37:13"
+    }
+]

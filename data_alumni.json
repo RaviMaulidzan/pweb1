@@ -1,0 +1,18 @@
+[
+    {
+        "nama": "Walter White",
+        "tahun_lulus": "2019",
+        "jurusan": "Sistem Informasi",
+        "pekerjaan": "Chef",
+        "email": "walterwhite@gmail.com",
+        "telepon": "081216484815"
+    },
+    {
+        "nama": "Gus Fring",
+        "tahun_lulus": "2019",
+        "jurusan": "Sistem Informasi",
+        "pekerjaan": "Owner resto ayam",
+        "email": "gusfring@gmail.com",
+        "telepon": "0812164848189"
+    }
+]
